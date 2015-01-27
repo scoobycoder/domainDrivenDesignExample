@@ -5,7 +5,7 @@ class VendingMachine
   end
 
   def purchase
-    return true if @bill.purchase_power_of_one
+    return true if @bill.can_buy_candy
     return false
   end
 

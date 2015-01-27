@@ -4,7 +4,7 @@ class ValueDollar
     @value = value
   end
 
-  def purchase_power_of_one
+  def can_buy_candy
     @value == 1
   end
 
