@@ -9,5 +9,14 @@ describe 'Value Dollar' do
 
     vending_machine.purchase.should == true
   end
-  
+
+  it 'should not allow for purchase if the value is less than 1' do
+    value_dollar = ValueDollar.new(0.5)
+
+    vending_machine = VendingMachine.new(value_dollar)
+
+    vending_machine.purchase.should == false
+  end
+
+
 end
