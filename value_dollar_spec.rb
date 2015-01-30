@@ -17,5 +17,4 @@ describe 'Value Dollar' do
     vending_machine.purchase.should == false
   end
 
-
 end

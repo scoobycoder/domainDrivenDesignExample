@@ -6,7 +6,7 @@ class VendingMachine
 
   def purchase
     return true if @bill.can_buy_candy
-    return false
+    false
   end
 
 end
