@@ -3,7 +3,7 @@ require './treasury'
 
 describe 'Entity Dollar' do
 
-  it 'should tell serial number' do
+  it 'should print dollars' do
     entity_dollar = EntityDollar.new
 
     treasury = Treasury.new(entity_dollar)
