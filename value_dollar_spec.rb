@@ -7,14 +7,14 @@ describe 'Value Dollar' do
     value_dollar = ValueDollar.new(1)
     vending_machine = VendingMachine.new(value_dollar)
 
-    vending_machine.purchase.should == true
+    vending_machine.purchase_candy.should == true
   end
 
   it 'should not allow purchase if value is less than one' do
     value_dollar = ValueDollar.new(0.5)
     vending_machine = VendingMachine.new(value_dollar)
 
-    vending_machine.purchase.should == false
+    vending_machine.purchase_candy.should == false
   end
 
 end

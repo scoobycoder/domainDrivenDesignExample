@@ -4,7 +4,7 @@ class VendingMachine
     @bill = bill
   end
 
-  def purchase
+  def purchase_candy
     return true if @bill.can_buy_candy
     false
   end
